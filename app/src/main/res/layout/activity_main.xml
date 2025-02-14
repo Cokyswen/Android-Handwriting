@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="clear"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alpha: 0"/>
+
+            <SeekBar
+                android:id="@+id/alphaSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:min="1"
+                android:max="100"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvWidth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Width: 1"/>
+
+            <SeekBar
+                android:id="@+id/widthSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:min="1"
+                android:max="10"/>
+
+        </LinearLayout>
+
+        <com.cokyswen.writelib.view.HandwritingView
+            android:id="@+id/handwritingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</layout>
